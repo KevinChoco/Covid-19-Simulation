@@ -83,7 +83,7 @@ class InfectedPerson(Person):
                 people[people.index(other)] = InfectedPerson.from_person(other)
         return self
 
-    @staticmethod
+    
     def from_person(person):
         p = InfectedPerson()
         p.x, p.y, p.vx, p.vy = person.x, person.y, person.vx, person.vy
